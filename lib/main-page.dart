@@ -50,7 +50,7 @@ class MainPage extends StatelessWidget {
           ),
           Positioned(
             child: Container(
-              margin: EdgeInsets.fromLTRB(30, 350, 30, 30),
+              margin: EdgeInsets.fromLTRB(30, 310, 30, 30),
               child: Align(
                 alignment: Alignment.center,
                 child: FittedBox(

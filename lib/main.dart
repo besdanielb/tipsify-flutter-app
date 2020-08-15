@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tipsify/main-page.dart';
 import 'package:tipsify/calculation-page.dart';
+import 'package:tipsify/results-page.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         scrollDirection: Axis.vertical,
         children: [
           MainPage(),
-          CalculationPage()
+          ResultsPage()
         ],
       ),
     ));

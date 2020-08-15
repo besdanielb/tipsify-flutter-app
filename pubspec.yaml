@@ -59,6 +59,7 @@ flutter:
     - assets/images/vector.svg
     - assets/images/vector2.svg
     - assets/images/users.svg
+    - assets/images/back-arrow.svg
 
   # To add assets to your application, add an assets section, like this:
   # assets:
