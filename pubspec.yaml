@@ -21,6 +21,7 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  flutter_svg : ^0.18.0
   flutter:
     sdk: flutter
 
@@ -43,6 +44,22 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/Montserrat/Montserrat-Medium.ttf
+          weight: 400
+
+  assets:
+    - assets/
+    - assets/images/
+    - assets/images/polygon1.svg
+    - assets/images/polygon2.svg
+    - assets/images/vector.svg
+    - assets/images/vector2.svg
+    - assets/images/users.svg
+    - assets/images/back-arrow.svg
 
   # To add assets to your application, add an assets section, like this:
   # assets:
