@@ -32,6 +32,85 @@ class MainPage extends StatelessWidget {
               child: Align(
                 alignment: Alignment.center,
                 child: SvgPicture.asset('assets/images/users.svg',
+                    width: MediaQuery.of(context).size.width,
+                    semanticsLabel: 'users'),
+              ),
+            ),
+          ),
+          Positioned(
+            child: Container(
+              margin: EdgeInsets.all(30),
+              padding: EdgeInsets.only(bottom: 250),
+              child: Align(
+                alignment: Alignment.centerRight,
+                child: SvgPicture.asset('assets/images/vector2.svg',
+                    semanticsLabel: 'currencySign'),
+              ),
+            ),
+          ),
+          Positioned(
+            child: Container(
+              margin: EdgeInsets.fromLTRB(30, 350, 30, 30),
+              child: Align(
+                alignment: Alignment.center,
+                child: FittedBox(
+                  fit: BoxFit.fitWidth,
+                  child: Text('Tipsify',
+                      style: TextStyle(
+                          color: Color.fromRGBO(35, 53, 103, 1),
+                          fontFamily: 'Montserrat',
+                          fontSize: 48,
+                          fontWeight: FontWeight.normal,
+                          height: 3)),
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+              child: Container(
+                  margin: EdgeInsets.all(10),
+                  child: Stack(
+                    children: <Widget>[
+                      Align(
+                        child: Container(
+                          margin: EdgeInsets.only(bottom: 25),
+                          alignment: Alignment.bottomCenter,
+                          child: Transform.rotate(
+                            angle: 190 * (math.pi / 190),
+                            child: SvgPicture.asset('assets/images/vector.svg',
+                                height: 25,
+                                width: 20,
+                                semanticsLabel: 'upArrow'),
+                          ),
+                        ),
+                      ),
+                      Align(
+                        alignment: Alignment.bottomCenter,
+                        child: Text(
+                          'Swipe Up!',
+                          style: TextStyle(
+                              color: Color.fromRGBO(35, 53, 103, 1),
+                              fontFamily: 'Montserrat',
+                              fontSize: 13,
+                              fontWeight: FontWeight.normal,
+                              height: 3),
+                        ),
+                      ),
+                    ],
+                  ))),
+        ],
+      ),
+    );
+  }
+}
+
+/*
+ Positioned(
+            child: Container(
+              margin: EdgeInsets.all(30),
+              child: Align(
+                alignment: Alignment.center,
+                child: SvgPicture.asset('assets/images/users.svg',
                     semanticsLabel: 'users'),
               ),
             ),
@@ -94,8 +173,4 @@ class MainPage extends StatelessWidget {
                       ),
                     ],
                   ))),
-        ],
-      ),
-    );
-  }
-}
+ */
