@@ -20,84 +20,74 @@ class ResultsPage extends StatelessWidget {
               children: [
                 Container(
                   margin: EdgeInsets.only(top: 50),
-                  height:  MediaQuery.of(context).size.height/4,
-                  child: Align(
-                    alignment: Alignment.topCenter,
-                    child: FittedBox(
-                      fit: BoxFit.fitWidth,
-                      child: Text(
-                        'Total Tip',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                            color: Color.fromRGBO(255, 223, 223, 1),
-                            fontFamily: 'Montserrat',
-                            fontSize: 45,
-                            fontWeight: FontWeight.normal),
-                      ),
+                  height: MediaQuery.of(context).size.height / 4,
+                  alignment: Alignment.topCenter,
+                  child: FittedBox(
+                    fit: BoxFit.fitWidth,
+                    child: Text(
+                      'Total Tip',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          color: Color.fromRGBO(255, 223, 223, 1),
+                          fontFamily: 'Montserrat',
+                          fontSize: 45,
+                          fontWeight: FontWeight.normal),
                     ),
                   ),
                 ),
                 Container(
-                  child: Align(
-                    alignment: Alignment.topCenter,
-                    child: FittedBox(
-                      fit: BoxFit.fitWidth,
-                      child: Text(
-                        '12 €',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                            color: Color.fromRGBO(255, 223, 223, 1),
-                            fontFamily: 'Montserrat',
-                            fontSize: 45,
-                            fontWeight: FontWeight.normal),
-                      ),
+                  alignment: Alignment.topCenter,
+                  child: FittedBox(
+                    fit: BoxFit.fitWidth,
+                    child: Text(
+                      '12 €',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          color: Color.fromRGBO(255, 223, 223, 1),
+                          fontFamily: 'Montserrat',
+                          fontSize: 45,
+                          fontWeight: FontWeight.normal),
                     ),
                   ),
                 ),
                 Container(
-                  height:  MediaQuery.of(context).size.height/4,
+                  height: MediaQuery.of(context).size.height / 4,
                   margin: EdgeInsets.only(top: 20),
-                  child: Align(
-                    alignment: Alignment.bottomCenter,
-                    child: FittedBox(
-                      fit: BoxFit.fitWidth,
-                      child: Text(
-                        'Tip per person',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                            color: Color.fromRGBO(49, 91, 150, 1),
-                            fontFamily: 'Montserrat',
-                            fontSize: 45,
-                            fontWeight: FontWeight.normal),
-                      ),
+                  alignment: Alignment.bottomCenter,
+                  child: FittedBox(
+                    fit: BoxFit.fitWidth,
+                    child: Text(
+                      'Tip per person',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          color: Color.fromRGBO(49, 91, 150, 1),
+                          fontFamily: 'Montserrat',
+                          fontSize: 45,
+                          fontWeight: FontWeight.normal),
                     ),
                   ),
                 ),
                 Container(
-                  height:  MediaQuery.of(context).size.height/6,
-                  child: Align(
-                    alignment: Alignment.bottomCenter,
-                    child: FittedBox(
-                      fit: BoxFit.fitWidth,
-                      child: Text(
-                        '6 €',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                            color: Color.fromRGBO(49, 91, 150, 1),
-                            fontFamily: 'Montserrat',
-                            fontSize: 45,
-                            fontWeight: FontWeight.normal),
-                      ),
+                  height: MediaQuery.of(context).size.height / 6,
+                  alignment: Alignment.bottomCenter,
+                  child: FittedBox(
+                    fit: BoxFit.fitWidth,
+                    child: Text(
+                      '6 €',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          color: Color.fromRGBO(49, 91, 150, 1),
+                          fontFamily: 'Montserrat',
+                          fontSize: 45,
+                          fontWeight: FontWeight.normal),
                     ),
                   ),
                 ),
                 Container(
-                  height:  MediaQuery.of(context).size.height/8,
-                  child: Align(
-                    alignment: Alignment.bottomCenter,
-                    child: SvgPicture.asset('assets/images/back-arrow.svg',
-                        semanticsLabel: 'backArrow'),
-                  ),
+                  height: MediaQuery.of(context).size.height / 8,
+                  alignment: Alignment.bottomCenter,
+                  child: SvgPicture.asset('assets/images/back-arrow.svg',
+                      semanticsLabel: 'backArrow'),
                 ),
               ],
             ),
